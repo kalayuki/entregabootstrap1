@@ -1,0 +1,146 @@
+
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+        height: 3rem;
+        width: 3rem;
+    }
+   
+    .color__boton{
+        background-color: white;
+        border: #b1b9a6;
+    }
+   .link a {
+       color: black;
+   }
+
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+    .encabezado nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .color {
+        background-color: rgb(6, 88, 6);
+    }
+    .presentacion{
+        background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12);
+
+    }
+    .presentacion__logo img{
+        height: 20rem;
+        width: 20rem;
+        animation-name:logo;
+    animation-iteration-count:initial;
+    animation-timing-function:ease;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    }
+    @keyframes logo{
+        0%{transform: rotate(100deg)};
+        25%{transform:rotate(200deg)}
+        50%{ transform: rotate(250deg)}
+        75%{transition: rotate (300deg)}
+        100%{transform: rotate (360deg);}}
+
+    .titulo{
+       
+        background-color: rgba(255, 255, 255, 0.582);
+    }
+    .tituo h2{
+        font-size: 10rem;
+    }
+    
+    .ofertas {
+        
+        background-color: rgb(7, 68, 7);
+      
+    
+    }
+  
+    
+    .imagen__oferta__almohaditas{
+        height: 18rem;
+        width: 100%;
+    }
+    .imagen__oferta__almedras{
+        height: 18rem;
+        width: 100%;
+        
+    }
+    h3{
+    
+    background-color: rgba(255, 255, 255, 0.815);
+    height: 3rem;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name:h3;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+    animation-duration: 2s;
+    animation-delay: 1s;}
+    @keyframes h3{
+        
+        50%{width:100%;
+              background-color:green;
+            font-size: 2rem;}
+        }
+        
+        .productos{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        h4{
+            background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12);
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+
+
+        }
+        .leche__almendras{
+            height: 12rem;
+        }
+        .recetas{
+            background-color: black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+ .link__vermas{
+     color: black;
+ }
+ .footer__link a{
+     color: black;
+
+ }
+ 
+ 
+ 
+ .main__contacto{
+     height: 75.4vh;
+ }
