@@ -8,6 +8,7 @@
     .logo{
         height: 3rem;
         width: 3rem;
+        
     }
    
     .color__boton{
@@ -21,7 +22,9 @@
     .encabezado{
         display: flex;
         flex-direction: column;
+        padding: 0%;
     }
+    
     .encabezado nav{
         display: flex;
         justify-content: center;
@@ -38,6 +41,7 @@
     .presentacion__logo img{
         height: 20rem;
         width: 20rem;
+        
         animation-name:logo;
     animation-iteration-count:initial;
     animation-timing-function:ease;
@@ -143,4 +147,61 @@
  
  .main__contacto{
      height: 75.4vh;
+     
  }
+
+ /* inicar sesion*/
+ .main_iniciarsesion{
+     height: 76.5vh;
+     background-image: linear-gradient(to right top, #d1d16b, #93d586, #4fd3ad, #00ccd3, #25bfea, #40bff0, #56bff4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
+     .Iniciarsesion__imagen{
+     height: 10rem;
+     width: 100%;
+ }
+ .contenedor__iniciarsesion{
+     height: 90%;
+     width: 50%;
+ }
+ .iniciarsesion__formulario{
+     height: 80%;
+ }
+ .boton__iniciarsesion{
+     display: flex;
+     flex-direction: column;
+     
+
+ }
+ .usuario{
+     height: 2rem;
+ }
+ .color__boton{
+     background-color: rgba(35, 201, 14, 0.596);
+     height: 2rem;
+     color: #000000;
+     
+ }
+
+
+
+/*nosotros*/
+.imagen__nosotros img{
+  height: 92%;
+  width: 90%;
+}
+.main__quienessomos{
+    height: 76.5vh;
+}
+@media screen and (max-width: 800px){
+    .botton__olvido{
+        font-size: 12px;
+    }
+    .main__quienessomos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+   .boton__menu{
+       height: 2rem;
+       display: flex;
+       gap: 10px;
+   }
