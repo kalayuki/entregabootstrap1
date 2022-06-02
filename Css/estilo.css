@@ -191,7 +191,15 @@
 .main__quienessomos{
     height: 76.5vh;
 }
-@media screen and (max-width: 800px){
+/*PRODUCTOS*/
+
+   .boton__menu{
+       height: 2rem;
+       display: flex;
+       gap: 10px;
+   }
+
+ @media screen and (max-width: 800px){
     .botton__olvido{
         font-size: 12px;
     }
@@ -200,8 +208,3 @@
         flex-direction: column;
     }
 }
-   .boton__menu{
-       height: 2rem;
-       display: flex;
-       gap: 10px;
-   }

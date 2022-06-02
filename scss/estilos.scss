@@ -1,0 +1,164 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+        flex-direction: column;
+        padding: 0%;
+        nav{
+            display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(6, 88, 6);
+        
+        img{
+            height: 3rem;
+        width: 3rem;
+        
+
+        
+    
+}
+}
+}
+header{
+        nav{
+            .color__boton{
+                background-color: white;
+                border: #b1b9a6;
+
+            }
+        }
+}
+header{
+    .link{
+        ul{
+            li{
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+main{
+    .presentacion{
+        background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12);
+
+        img{
+            height: 20rem;
+            width: 20rem;
+            
+            animation-name:logo;
+        animation-iteration-count:initial;
+        animation-timing-function:ease;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        
+        @keyframes logo{
+            0%{transform: rotate(100deg)};
+            25%{transform:rotate(200deg)}
+            50%{ transform: rotate(250deg)}
+            75%{transition: rotate (300deg)}
+            100%{transform: rotate (360deg);}}
+        }
+    }
+}
+main{
+    .presentacion{
+        .titulo{
+            background-color: rgba(255, 255, 255, 0.582);
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+main{
+    .ofertas{
+        background-color: rgb(7, 68, 7);
+        img{
+            height: 18rem;
+         width: 100%;
+        }
+    }
+}
+main{
+    .ofertas{
+        h3{
+            background-color: rgba(255, 255, 255, 0.815);
+            height: 3rem;
+            display: flex;
+             justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation-name:h3;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease;
+            animation-duration: 2s;
+            animation-delay: 1s;}
+            @keyframes h3{
+                
+                50%{width:100%;
+                      background-color:green;
+                    font-size: 2rem;}
+        }
+    }
+}
+main{
+    .productos{
+        display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12);
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+    }
+}
+main{
+    .productos{
+        .contenedor{
+            display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    .leche__almendras{
+        height: 12rem;
+    }
+        }
+    }
+}
+main{
+    .productos{
+        .contenedor{
+            .link__ver{
+
+           
+            .link__vermas{
+                color: black;
+            }
+        }
+        }
+    }
+}
+footer{
+    background-color: rgb(6, 88, 6);
+       .footer__link{
+           li{
+               a{
+                color: black;
+               }
+           }
+       }
+}
