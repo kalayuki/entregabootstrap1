@@ -1,0 +1,39 @@
+header{
+    display: flex;
+        flex-direction: column;
+        padding: 0%;
+        nav{
+            display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: $fondo-verde;
+        
+        img{
+            height: 3rem;
+        width: 3rem;}
+    }
+    .link{
+        ul{
+            li{
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+
+    nav{
+        .color__boton{
+            background-color: white;
+            border: #b1b9a6;
+
+        }
+    }
+
+        
+
+        
+    
+
+}

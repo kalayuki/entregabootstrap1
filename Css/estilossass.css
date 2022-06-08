@@ -17,13 +17,11 @@ header {
     header nav img {
       height: 3rem;
       width: 3rem; }
-
-header nav .color__boton {
-  background-color: white;
-  border: #b1b9a6; }
-
-header .link ul li a {
-  color: black; }
+  header .link ul li a {
+    color: black; }
+  header nav .color__boton {
+    background-color: white;
+    border: #b1b9a6; }
 
 main .presentacion {
   background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12); }
