@@ -23,11 +23,12 @@ header {
     background-color: white;
     border: #b1b9a6; }
 
-main .presentacion {
+.main__index {
   background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12); }
-  main .presentacion img {
+  .main__index .presentacion img {
     height: 20rem;
     width: 20rem;
+    border-radius: 10rem;
     animation-name: logo;
     animation-iteration-count: initial;
     animation-timing-function: ease;
@@ -46,62 +47,172 @@ main .presentacion {
   100% {
     transform: rotate 360deg; } }
 
-main .presentacion .titulo {
+.main__index .presentacion .titulo {
   background-color: rgba(255, 255, 255, 0.582); }
-  main .presentacion .titulo h2 {
+  .main__index .presentacion .titulo h2 {
     font-size: 2rem; }
 
-main .ofertas {
-  background-color: #074407; }
-  main .ofertas img {
-    height: 18rem;
-    width: 100%; }
-
-main .ofertas h3 {
-  background-color: rgba(255, 255, 255, 0.815);
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  animation-name: h3;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-delay: 1s; }
+.main__index .oferta {
+  grid-area: oferta;
+  width: 50rem;
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10rem;
+  box-shadow: 5px 8px 12px black;
+  margin: 2rem auto; }
+  .main__index .oferta .imagen__oferta {
+    width: 100%;
+    height: 100%; }
+  .main__index .oferta h3 {
+    font-size: 3rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.61);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgba 0, 0, 0, 0, 8;
+    display: flex;
+    justify-content: center;
+    animation-name: h3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 1s; }
 
 @keyframes h3 {
   50% {
     width: 100%;
-    background-color: green;
     font-size: 2rem; } }
 
-main .productos {
+.productos p {
+  font-size: 2rem;
+  display: flex;
+  justify-items: center;
+  justify-content: center; }
+
+.productos .link__ver {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center; }
-  main .productos h4 {
-    background-image: linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12);
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+  .productos .link__ver a {
+    color: black;
+    font-size: bold; }
 
-main .productos .contenedor {
+.tarjetas {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px; }
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px; }
+  .contenedor .imagen {
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    overflow: hidden;
+    border-radius: 3rem;
+    box-shadow: 0px 15px 24px rgba(0, 0, 0, 0); }
+    .contenedor .imagen img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    .contenedor .imagen .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.651);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .contenedor .imagen .capa h4 {
+        color: white;
+        font-weight: 120px;
+        margin-bottom: 120px;
+        transition: all 500ms ease-out;
+        margin-top: 30px; }
+      .contenedor .imagen .capa p {
+        color: white;
+        font-size: 15px;
+        line-height: 1.5px;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+        margin-bottom: 5rem; }
+      .contenedor .imagen .capa .boton__comprar {
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        background-color: #90d818; }
+
+.contenedor .imagen:hover > .capa {
+  opacity: 1;
+  visibility: visible; }
+
+.contenedor .imagen:hover > img {
+  transform: scale(1.3); }
+
+.contenedor .imagen:hover > .capa h4 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.main__productos .pagina__productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main__productos .contenedor__productos {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 6rem; }
-  main .productos .contenedor .leche__almendras {
-    height: 12rem; }
 
-main .productos .contenedor .link__ver .link__vermas {
-  color: black; }
+.main__productos .leche__almendras {
+  height: 12rem; }
+
+.main__quinessomos {
+  height: 76.5vh; }
+  .main__quinessomos .imagen__nosotros {
+    height: 40%; }
+    .main__quinessomos .imagen__nosotros img {
+      height: 92%;
+      width: 90%; }
 
 footer {
   background-color: #065806; }
   footer .footer__link li a {
     color: black; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 0%; }
+
+header nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+header nav img {
+  height: 3rem;
+  width: 3rem; }
+
+header .link ul li a {
+  color: black; }
+
+header nav .color__boton {
+  background-color: white;
+  border: #b1b9a6; }
