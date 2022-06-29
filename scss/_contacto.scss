@@ -1,0 +1,30 @@
+
+    
+  
+
+    
+    .main__contacto{
+        background-color: $fondo-verde;
+        @include flex-box (row,center,center);
+        height: map-get($map: $altura, $key: altura29_95r ) ;
+        background-image: url(../Asset/Imagenes/banne-logo/kisspng-english-walnut-eastern-black-walnut-vector-walnuts-and-leaves-5a9360c2efa498.3270807315196080029816.png);
+
+     
+        .contenedor__contacto{
+
+            height: map-get($map: $altura, $key:altura25 );
+            width: map-get($map: $porcentaje, $key:cincuenta );
+            background-color: 0;
+            color:map-get($map: $mapa-colores, $key:color-fondo-boton );
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            .contacto__input{
+                color:map-get($map: $mapa-colores, $key:color-fondo-boton );
+                background-color: #3ae90e;
+            }
+        }
+
+    }
+            
+            
+      
+     

@@ -2,42 +2,51 @@
 
 
 header{
-    display: flex;
-        flex-direction: column;
-        padding: 0%;
+    @include flex-box(column,0,0);
+    
+    padding: 0%;
         nav{
-            display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+            @include flex-box(column,center,center);
         background-color: $fondo-verde;
+        .color{
+            background-color: $fondo-verde;    
+    
+        }
+        .link{
+                    ul{
+                        li{
+                            a{
+                               color:map-get($map: $mapa-colores , $key: color-link-black );
+                            }
+                        }
+                    }
+                }
+            
+            }
+            .color__boton{
+                background-color: map-get($map:$mapa-colores , $key:color-fondo-boton );
+                border:map-get($map:$mapa-colores , $key:color-boton-borde);
+    
+                    }
         
         img{
-            height: 3rem;
-        width: 3rem;}
-    }
-    .link{
-        ul{
-            li{
-                a{
-                    color: black;
-                }
-            }
-        }
-    }
-
-    nav{
-        .color__boton{
-            background-color: white;
-            border: #b1b9a6;
-
-        }
+            height:map-get($map: $altura, $key:altura3r );
+        width:map-get($map: $altura, $key:altura3r );
+         border-radius: map-get($map:$borde-radio , $key:borderadio2r );}
     }
     
 
-        
 
-        
-    
+@media screen and (max-width: 1000px){
+    header{
+        nav{
 
+            @include flex-box(row,center,center);
+        }
+       img{ 
+        position: relative;
+        left:8px; 
+       
+       }
+    }
 }

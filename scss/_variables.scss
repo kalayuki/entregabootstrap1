@@ -1,10 +1,79 @@
+
 $fondo-verde:rgb(6, 88, 6);
+
 
 $mapa-colores:(
     fondo-gradient:linear-gradient(to right top, #50a11c, #64b31c, #7ac61b, #90d818, #a8eb12),
-    fondo-procentacion-titulo: rgba(255, 255, 255, 0.582),
+    fondo-procentacion-titulo: rgba(255, 255, 255, 0.925),
     fondo-ofertas: rgb(7, 68, 7),
     fondo-ofertas-h3: rgba(255, 255, 255, 0.815),
+    color-black:black,
+    color-border-radio:black,
+    color-link-black:black,
+    color-fondo-boton:white,
+    color-boton-borde: #b1b9a6,
+    color-pagos:#009F82,
+    color-menu:#7de918,
+    
 
 );
+
+$altura:(
+    altura1r:1rem,
+    altura3r:3rem,
+    altura2r:2rem,
+    altura20r:20rem,
+    altura9r:9rem,
+    altura10r:10rem,
+    altura13r:13rem,
+    altura15r:15rem,
+    altura20:20%,
+    altura25:25rem,
+    altura29_95r:29.95rem,
+    altura2__55r:2.55rem,
+
+
+
+);
+$ancho:(
+    ancho30r:30rem,
+    ancho20r: 20rem,
+    ancho7r:7rem,
+    ancho9r:9rem,
+    ancho15r: 15rem,
+    ancho100:100%
+);
+$borde-radio:(
+   borderadio1r:1rem,
+   borderadio2r:2rem,
+   borderadio10r:10rem,
+   borderadio:20rem,
+);
+$margin:(
+    margin2r:2rem,
+
+);
+$padding:(
     
+    paddingb15r: 1.5rem,
+    padding1r:1rem,
+    padding2r:2rem,
+    padding3r:3rem,
+);
+$gap:(
+    gap3r:3rem,
+);
+$porcentaje:(
+    cien:100%,
+    noventa:90%,
+    diez:10%,
+    cincuenta:50%,
+    ochenta: 80%,
+
+);
+$letra:(
+    letra1_5:1.5rem,
+    letra1r:1rem,
+    letra0_7:0.7rem,
+    letra0_9:0.9rem,
+)

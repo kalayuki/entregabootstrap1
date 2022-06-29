@@ -1,0 +1,25 @@
+.recetas{
+    background-color: rgba(6, 88, 6, 0.692);
+    padding: 2rem;
+    @include flex-box (row,center,center);
+
+ .recetas__tex{
+    @include flex-box (column,center,center);
+    border-radius: map-get($map: $borde-radio, $key:borderadio2r );
+    
+    
+    width: map-get($map: $ancho, $key:ancho30r ) ;
+    padding: map-get($map: $padding, $key:padding1r );
+    background-color:rgba(238, 130, 238, 0.788) ;
+     background-image: url(../Asset/Imagenes/banne-logo/transparent-plant-pathology-leaf-insect-larva-pathology-5fc9f42e83d628.20446729160707076654.png)}
+     p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+     }
+     .recetas__videoyoutube{
+        border-radius:map-get($map: $borde-radio, $key:borderadio2r );
+        width: map-get($map: $ancho, $key:ancho30r);
+        padding: 0.5rem;
+    }
+
+}
+

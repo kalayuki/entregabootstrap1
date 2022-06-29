@@ -1,0 +1,38 @@
+
+ .nosotros__encabezado{
+    height:map-get($map: $altura, $key: altura3r);
+ }
+           
+       .nosotros__main{
+       
+        height: map-get($map: $altura, $key: altura29_95r);
+        @include flex-box (row,center,center);
+        background-image: url(../Asset/Imagenes/banne-logo/kisspng-english-walnut-eastern-black-walnut-vector-walnuts-and-leaves-5a9360c2efa498.3270807315196080029816.png);
+         background-color: $fondo-verde;
+        
+          .nosotros__contenedor__imagen{
+            width: map-get($map: $porcentaje, $key: cincuenta );
+            @include flex-box (row,center,center);
+            img{
+                height: map-get($map: $altura, $key: altura9r );
+                width:map-get($map: $ancho, $key:ancho9r );
+                border-radius: map-get($map: $borde-radio, $key:borderadio2r );
+            }
+
+          }
+          .nosotros__contenedor__texto{
+            padding: map-get($map: $padding, $key:  padding1r ) ;
+            width: map-get($map: $porcentaje, $key: cincuenta );
+            @include flex-box (column,center,center);
+            color:map-get($map: $mapa-colores, $key:color-fondo-boton );
+          }
+       }
+      
+       @media screen and (max-width: 800px){
+        .nosotros__main{
+            padding: map-get($map: $padding, $key: padding2r);
+            padding-top: map-get($map: $padding, $key:padding2r );
+           flex-wrap: wrap;
+          
+       }
+    }
